@@ -50,11 +50,13 @@ export const translate = (word: string) => {
 			const string = Buffer.concat(chunks).toString()
 			const response = JSON.parse(string)
 			console.log(response.basic.explains.join('\n'))
+			process.exit(2)
 		})
 	})
 
 	req.on('error', (e) => {
 		console.error(e)
+		process.exit(0)
 	})
 	req.end()
 }
