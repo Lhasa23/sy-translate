@@ -1,0 +1,23 @@
+{
+  "name": "sy-translate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "bin": {
+    "syTrans": "dist/cli.js"
+  },
+  "files": [
+    "dist/**/*.js"
+  ],
+  "scripts": {
+    "start": "ts-node-dev src/main.ts"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^14.14.21",
+    "@types/node-uuid": "^0.0.28"
+  },
+  "dependencies": {
+    "commander": "^7.0.0",
+    "node-uuid": "^1.4.8"
+  }
+}
